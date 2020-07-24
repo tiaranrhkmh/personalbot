@@ -1,0 +1,104 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- menyapa
+- goodbye
+- sebut_nama
+- bertanya
+- hiburan
+- knowledge
+- ask_date
+- ask_hour
+- ask_day
+- open_cam
+- ngobrol_Indita
+- open_note
+- asal_indita
+- ask_month
+- ask_year
+entities:
+- sapaan
+- objek
+- nama
+- who
+- do
+- asal
+slots:
+  asal:
+    type: text
+  do:
+    type: text
+  nama:
+    type: text
+  objek:
+    type: text
+  sapaan:
+    type: text
+  who:
+    type: text
+responses:
+  utter_jawab:
+  - text: Saya Indita, selalu siap membantu anda?
+  utter_goodbye:
+  - text: Bye
+  utter_sebut_nama:
+  - text: Halo {nama}, salam kenal yah
+  utter_sapaan:
+  - text: '{sapaan}, ada yang saya bisa bantu?'
+  utter_hibur:
+  - text: Lihat kebunku penuh dengan bunga, lihat dirimu aku berbunga-bunga.
+  - text: Di atas langit masih ada langit! Di bawah langit masih ada aku yang tulus
+      mencintaimu.
+  - text: Kenapa orang pintar minum Tolak Angin? Karena cuma orang bodoh yang minum
+      tolak kamu
+  - text: Dalam benak orang bijak ada ide, solusi dan alasan. Dalam benak para ahli
+      ada formula kimia, teori dan rumus. Di dalam benakku, hanya ada kamu!
+  - text: "Panas-panas kota Jakarta \n Akibat pemanasan dunia \n Bila mendambakan\
+      \ lulus sarjana \n Tidur malam tanpa celana"
+  - text: "Burung perkutut \n Burung kutilang \n Kamu kentut \n Nggak bilang bilang"
+  - text: "Buah pisang buah tomat \n Disimpan di dalam lumbung padi \n Pantas tercium\
+      \ bau menyengat \n Rupanya kau belum mandi"
+  - text: "Rumahmu dari kayu \n Atapnya dari jerami \n Rupamu sungguh ayu \n Tapi\
+      \ sayang jarang mandi"
+  - text: "Dulu delman \n Sekarang dokar \n Dulu teman \n Sekarang pacar"
+  - text: "Kehutan mencari rusa \n Hendaklah mempunyai tali \n Wahai anak-anak bangsa\
+      \ \n Cepat bangun lekas mandi"
+  - text: "Jalan-jalan naik delman \n Keliling kota hingga senja \n Teman mengaku\
+      \ teman \n Kalau tersedia maunya saja"
+  - text: "Kunang-kunang berlaksa-laksa \n Di selagi hujan badannya basah \n Pinjam\
+      \ duwit 1/2 memaksa \n Bayar hutangnya benar-benar susah"
+  - text: "Cari busana pergi ke pekan \n Berjalan kaki perlahan-lahan \n Berkali-kali\
+      \ sudah dimaafkan \n Jangan kembali kembali kesalahan"
+  - text: "Jalan-jalan ke pantai Indrayanti \n Jangan lupa membawa sepeda \n Tak guna\
+      \ menanti nasib tak pasti \n Kalau tak pernah mau berusaha"
+  - text: "Sapi kabur orang sekampung mengejar \n Tak tahunya bertemu si tukang jagal\
+      \ \n Siapa suruh dulu enggan belajar \n Sudah tua sekarang menyesal"
+  - text: "Gadis kecil berambut kepang \n Di lapangan berkejar-kejaran \n Jadi orang\
+      \ jangan suka berhutang \n Hiduplah saja dengan wajar"
+  utter_asal:
+  - text: aku Indita diciptakan untuk melayani kamu
+  - text: aku {asal} dari sebuah tempat
+  utter_ngobrol:
+  - text: aku {do} memikirkan kapan pandemic ini berakhir
+  - text: '{do} bersama dengan kamu'
+  - text: '{do} melayani anda'
+  - text: '{do} chat'
+actions:
+- action_hello_world
+- utter_jawab
+- utter_goodbye
+- utter_sebut_nama
+- action_jawab_waktu
+- utter_sapaan
+- action_answer_search
+- action_answer_date
+- action_answer_hour
+- action_answer_day
+- action_open_camera
+- utter_asal
+- utter_ngobrol
+- action_open_note
+- action_answer_month
+- action_answer_year
+- utter_hibur
